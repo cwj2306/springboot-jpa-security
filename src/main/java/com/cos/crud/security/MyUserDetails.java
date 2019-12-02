@@ -29,7 +29,7 @@ public class MyUserDetails implements UserDetails{
 	//계정의 패스워드를 리턴한다
 	@Override
 	public String getUsername() {
-		return user.getUsermane();
+		return user.getUsername();
 	}
 
 	//계정이 만료되지 않았는지를 리턴한다(true를 리턴하면 만료되지 않음을 의미)

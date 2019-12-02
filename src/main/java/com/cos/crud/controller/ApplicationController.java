@@ -57,9 +57,9 @@ public class ApplicationController {
 	public @ResponseBody String adminTest(@AuthenticationPrincipal MyUserDetails userDetails) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("id : " + userDetails.getUser().getId() + "<br/>");
-		sb.append("id : " + userDetails.getUsername() + "<br/>");
-		sb.append("id : " + userDetails.getPassword() + "<br/>");
-		sb.append("id : " + userDetails.getUser().getEmail() + "<br/>");
+		sb.append("username : " + userDetails.getUsername() + "<br/>");
+		sb.append("password : " + userDetails.getPassword() + "<br/>");
+		sb.append("email : " + userDetails.getUser().getEmail() + "<br/>");
 
 		return sb.toString();
 	}

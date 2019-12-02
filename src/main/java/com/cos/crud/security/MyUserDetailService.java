@@ -1,5 +1,6 @@
 package com.cos.crud.security;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -11,6 +12,7 @@ import com.cos.crud.repository.MyUserRepository;
 @Service
 public class MyUserDetailService implements UserDetailsService {
 	
+	@Autowired
 	private MyUserRepository mRepo;
 	
 	// loginForm에서 action="user/loginProcess"되면
